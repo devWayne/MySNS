@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">  
+<mapper namespace="User">  
+
+  
+  	<select id="loginCheck" parameterType="stuUser" resultType="String">
+  	select stu_loginName from tab01 where stu_loginName=#{stu_loginName} and stu_password=#{stu_password}
+  	</select>
+  	
+  	<select id="selUser" resultType="stuUser" parameterType="String">
+  	select * from tab01 where stu_loginName=#{stu_loginName}
+  	</select>
+  	
+  	<insert id="userReg" parameterType="stuUser">
+  	insert into tab01(stu_loginname,stu_password,stu_name,stu_term,stu_gen,stu_class,stu_major) 
+  	values (#{stu_loginName},#{stu_password},#{stu_name},#{stu_term},#{stu_gen},#{stu_class},#{stu_major})
+  	</insert>
+</mapper>
