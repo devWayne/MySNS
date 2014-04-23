@@ -11,6 +11,8 @@ import org.vi.service.user.StuUserService;
 @Scope("request")
 public class UserAction extends BasicAction{
   
+	
+	
 	/**
 	 * 
 	 */
