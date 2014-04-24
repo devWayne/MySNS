@@ -15,3 +15,7 @@ h6,
   line-height: 1.1;
   color: inherit;
 }
+
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }

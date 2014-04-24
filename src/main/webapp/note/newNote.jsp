@@ -1,3 +1,5 @@
+
+
 <%@ page language="java" import="java.util.*" pageEncoding="utf-8" %>
 <%@ page language="java" import="java.text.*" %>
 <%@ page language="java" import="java.io.*" %>
@@ -7,24 +9,10 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>VI Wayne毕业设计</title>
-    <!-- Bootstrap -->
-    <link href="../css/bootstrap.css" rel="stylesheet">
-    <link href="../css/editor.css" rel="stylesheet">
- 
+   <jsp:include page="../header.jsp"></jsp:include>
+   <link type="text/css" href="${pageContext.request.contextPath}/css/editor.css" rel="stylesheet">
    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-  
-</head>
-<body>
-
-
+   
 <br><Br><br>
 <h1 class="text-center">笔记分享</h1>
  <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">

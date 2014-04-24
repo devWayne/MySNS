@@ -9,9 +9,51 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 %>
 
 <jsp:include page="../header.jsp"></jsp:include>
+<link type="text/css" href="${pageContext.request.contextPath}/css/chart/chart.css" rel="stylesheet">
+<div class="row">
+<div class="chart-legend col-md-8">
+		<canvas id="canvas" height="450" width="450"></canvas>
+		</div>
+		<div class="chart-legend col-md-4">
+        <ul>
+            <li class="ship">Shipping &amp; Receiving</li>
+            <li class="rework">Rework</li>
+            <li class="admin">Administrative</li>
+            <li class="prod">Production</li>
+        </ul>
+   		 </div>
+	</div>	
 
+<script src="${pageContext.request.contextPath}/js/chart/Chart.js"></script>
+	<script>
 
-<br><Br><br>
+		var doughnutData = [
+				{
+					value: 30,
+					color:"#F7464A"
+				},
+				{
+					value : 50,
+					color : "#46BFBD"
+				},
+				{
+					value : 100,
+					color : "#FDB45C"
+				},
+				{
+					value : 40,
+					color : "#949FB1"
+				},
+				{
+					value : 120,
+					color : "#4D5360"
+				}
+			
+			];
+
+	var myDoughnut = new Chart(document.getElementById("canvas").getContext("2d")).Doughnut(doughnutData);
+	
+	</script>
 
 
 

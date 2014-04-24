@@ -10,11 +10,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <jsp:include page="header.jsp"></jsp:include>
 
-<div class="jumbotron container">
- <h1>Welcome!</h1><Br><br>
+<div class="jumbotron">
+
 <div class="row">
-	  <div class="col-md-6">
-	 
+	  <div class="col-md-5">
+	  <h1>欢迎使用!</h1><Br><br>
 	
 	 
 	 <a href="note/newNote.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个笔记</a>
@@ -23,19 +23,69 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	 <br><br>
 	 <a href="vote/newVote.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个投票</a>
 	 <a href="vote/listVote.jsp" class="btn btn-default btn-lg" role="button">开始进行投票</a>
-	
-	</div>
-	
-	 <div class="col-md-6">
-	
+	 <br><br>
 	  <a href="notice/newNotice.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个消息</a>
 	 <a href="notice/listNotice.jsp" class="btn btn-default btn-lg" role="button">开始浏览消息</a>
 	
 	 <br><br>
 	 <a href="note/newNote.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个投票</a>
 	 <a href="note/newNote.jsp" class="btn btn-default btn-lg" role="button">开始进行投票</a>
-	 </div>
+	</div>
+	
+	 <div class="col-md-7">
 
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+		
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner">
+		    <div class="item active">
+		      <img src="images/first.png"   alt="github1">
+		      <div class="carousel-caption">
+		       <h3>github1</h3> 
+		         <p>github.com</p>
+		      </div>
+		    </div>
+		       <div class="item">
+		      <img src="images/second.png"    alt="github2">
+		      <div class="carousel-caption">
+		     	<h3>github2</h3> 
+		         <p>github.com</p>
+		      </div>
+		    </div>
+		  </div>
+		
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+		    <span class="glyphicon glyphicon-chevron-left"></span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+		    <span class="glyphicon glyphicon-chevron-right"></span>
+		  </a>
+		</div>
 </div>
+ 
+	</div>
 </div>
+
+
+
+
+<script src="${pageContext.request.contextPath}/js/unslider.js"></script>
+<script>
+$(function() {
+    $('.banner').unslider({	
+    	speed: 500,               //  The speed to animate each slide (in milliseconds)
+    	delay: 3000,              //  The delay between slide animations (in milliseconds)
+    	complete: function() {},  //  A function that gets called after every slide animation
+    	keys: true,               //  Enable keyboard (left, right) arrow shortcuts
+    	dots: true,               //  Display dot navigation
+    	fluid: false   });
+});
+</script>
 <jsp:include page="footer.jsp"></jsp:include>

@@ -18,12 +18,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
    <title>VI Wayne毕业设计</title>
     <!-- Bootstrap -->
 <link type="text/css" href="${pageContext.request.contextPath}/css/bootstrap.css" rel="stylesheet">
-<link  type="text/css" href="${pageContext.request.contextPath}/css/editor.css" rel="stylesheet">
 
-<link   type="text/css"href="${pageContext.request.contextPath}/css/font-awesome.css" rel="stylesheet">
+
+
 <link type="text/css" href="${pageContext.request.contextPath}/css/bootstrap-custom.css" rel="stylesheet">
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="${pageContext.request.contextPath}/js/jquery-1.11.0.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="${pageContext.request.contextPath}/js/bootstrap.js"></script>
@@ -32,7 +31,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 <body>
 
-<nav class="navbar navbar-inverse " role="navigation">
+
+<nav class="navbar navbar-default " role="navigation">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
             <span class="sr-only">Toggle navigation</span>
@@ -46,7 +46,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-            <li ><a href="#">MODal</a></li>
+            <li ><a href="http://wayneix.duapp.com">进入聊天室</a></li>
             <li><a href="#">Link</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
@@ -125,8 +125,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <div class="form-group">
     <label for="stu_gen">请选择性别</label>
     <select class="form-control" name="stuUser.stu_gen" id="stu_gen">
-	  <option value=1>1</option>
-	  <option value=0>0</option>	
+	  <option value=1>男</option>
+	  <option value=0>女</option>	
 	</select>
   </div>
       <div class="form-group">

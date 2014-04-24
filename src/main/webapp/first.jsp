@@ -17,9 +17,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     <title>VI Wayne毕业设计</title>
     <!-- Bootstrap -->
 <link type="text/css" href="${pageContext.request.contextPath}/css/bootstrap.css" rel="stylesheet">
-<link  type="text/css" href="${pageContext.request.contextPath}/css/editor.css" rel="stylesheet">
-
-<link   type="text/css"href="${pageContext.request.contextPath}/css/font-awesome.css" rel="stylesheet">
 <link   type="text/css"href="${pageContext.request.contextPath}/css/bootstrap-custom.css" rel="stylesheet">
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="${pageContext.request.contextPath}/js/jquery-1.11.0.js"></script>
@@ -30,9 +27,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </head>
 <body>
 <div class="jumbotron container">
-<h1>Ysera<small>Graduation Design of Wayne</small></h1>
+<h1>Ysera<small>Graduation Design of ViWayne</small></h1>
   <hr>
-    <p>&nbsp;&nbsp;Ysera is a SNS open-source website based on NodeJS with express and ejs framework.if you are insterested in the source code of Ysera or want to improve it with me ,you can click here and follow me on github.com/devWayne.</p>
+    <p>&nbsp;&nbsp;mySNS is a SNS open-source website based on JAVA EE with Sturt2,Spring and Mybatis framework.if you are insterested in the source code of mySNS(https://github.com/devWayne/mySNS) or want to improve it,you can click here and follow me on https://github.com/devWayne </p>
   <br> <br>
    <div class="text-center"><a href="index.jsp" role="button" class="btn btn-lg btn-primary">GET STARTED!</a></div>
 </div>
