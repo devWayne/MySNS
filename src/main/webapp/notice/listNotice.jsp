@@ -10,7 +10,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 <jsp:include page="../header.jsp"></jsp:include>
 
-
+	<c:forEach items="${notices}" var="notice">
+	</c:forEach>
 <br><Br><br>
 
 

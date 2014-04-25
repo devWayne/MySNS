@@ -15,7 +15,7 @@ public class NoticeDaoImpl implements NoticeDao{
 
 	@Override
 	public void newNotice(Notice notice) throws Exception {
-		sqlSessionTemplate.insert(NEWNOTICE);
+		sqlSessionTemplate.insert(NEWNOTICE,notice);
 		
 	}
 }

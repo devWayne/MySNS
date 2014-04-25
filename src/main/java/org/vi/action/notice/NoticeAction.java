@@ -22,6 +22,7 @@ public class NoticeAction extends BasicAction{
 	 */
 	private Notice notice;
 	
+	
 	@Autowired
 	private NoticeService noticeService;
 	

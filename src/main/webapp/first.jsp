@@ -29,7 +29,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div class="jumbotron container">
 <h1>Ysera<small>Graduation Design of ViWayne</small></h1>
   <hr>
-    <p>&nbsp;&nbsp;mySNS is a SNS open-source website based on JAVA EE with Sturt2,Spring and Mybatis framework.if you are insterested in the source code of mySNS(https://github.com/devWayne/mySNS) or want to improve it,you can click here and follow me on https://github.com/devWayne </p>
+    <p>&nbsp;&nbsp;mySNS is a SNS open-source website based on JAVA EE with Sturt2,Spring and Mybatis framework.if you are insterested in the source code of <a href=https://github.com/devWayne/mySNS>mySNS</a>  or want to improve it,you can click <a href=https://github.com/devWayne>here</a> and follow me on github.  </p>
   <br> <br>
    <div class="text-center"><a href="index.jsp" role="button" class="btn btn-lg btn-primary">GET STARTED!</a></div>
 </div>

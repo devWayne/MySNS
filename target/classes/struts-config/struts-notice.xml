@@ -4,8 +4,8 @@
   
     <package name="notice" namespace="" extends="struts-default">  
          <action name="notice_*" class="org.vi.action.notice.NoticeAction" method="{1}">  
-            <result name="success">/success.jsp</result>  
-             <result name="input">/index.jsp</result>
+            <result name="newNotice_success">/notice/listNotice.jsp</result>  
+            
         </action> 
     </package>  
 </struts>

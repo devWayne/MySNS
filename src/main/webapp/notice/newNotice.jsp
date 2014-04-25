@@ -14,7 +14,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <div class="jumbotron container">
   <h1>新建一条消息</h1>
   <br>
-     <textarea rows="10" cols="100" >
+     <textarea rows="10" cols="100" id="notice_content" name="notice.notice_content">
 		在w3school，你可以找到你所需要的所有的网站建设教程。
 	</textarea>
 <br><br>

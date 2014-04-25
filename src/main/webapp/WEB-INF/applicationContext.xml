@@ -16,11 +16,11 @@
 	<!-- 配置要扫描的包 -->
 	<context:component-scan base-package="org.vi"></context:component-scan>
 
-	<!-- 云端 属性文件 -->
-	<context:property-placeholder location="WEB-INF/jdbc.properties" /> 
+	<!-- 云端 属性文件
+	<context:property-placeholder location="WEB-INF/jdbc.properties" />  -->
 	
 	<!-- 本地 属性文件 -->
-	<!-- <context:property-placeholder location="WEB-INF/jdbclocal.properties" /> -->
+	<context:property-placeholder location="WEB-INF/jdbclocal.properties" />
 
 	<!-- 配置JDBC数据源 -->
 	<bean id="dataSource"
