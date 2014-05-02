@@ -7,29 +7,29 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-
-<jsp:include page="header.jsp"></jsp:include>
+<jsp:include page="includes/head.jsp"></jsp:include>
+<jsp:include page="includes/header.jsp"></jsp:include>
 
 <div class="jumbotron">
 
 <div class="row">
 	  <div class="col-md-5">
-	  <h1>欢迎使用!</h1><Br><br>
+	  <h1>欢迎使用!</h1><Br>
 	
 	 
-	 <a href="note/newNote.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个笔记</a>
-	 <a href="note/listNote.jsp" class="btn btn-default btn-lg" role="button">开始浏览笔记</a>
+	 <a href="${pageContext.request.contextPath}/note/newNote.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个笔记</a>
+	 <a href="${pageContext.request.contextPath}/note/listNote.jsp" class="btn btn-default btn-lg" role="button">开始浏览笔记</a>
 	
 	 <br><br>
-	 <a href="vote/newVote.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个投票</a>
-	 <a href="vote/listVote.jsp" class="btn btn-default btn-lg" role="button">开始进行投票</a>
+	 <a href="${pageContext.request.contextPath}/vote/newVote.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个投票</a>
+	 <a href="${pageContext.request.contextPath}/vote/listVote.jsp" class="btn btn-default btn-lg" role="button">开始进行投票</a>
 	 <br><br>
-	  <a href="notice/newNotice.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个消息</a>
-	 <a href="notice/listNotice.jsp" class="btn btn-default btn-lg" role="button">开始浏览消息</a>
+	  <a href="${pageContext.request.contextPath}/notice/newNotice.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个消息</a>
+	 <a href="${pageContext.request.contextPath}/notice/listNotice.jsp" class="btn btn-default btn-lg" role="button">开始浏览消息</a>
 	
 	 <br><br>
-	 <a href="note/newNote.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个投票</a>
-	 <a href="note/newNote.jsp" class="btn btn-default btn-lg" role="button">开始进行投票</a>
+	 <a href="${pageContext.request.contextPath}/note/newNote.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个投票</a>
+	 <a href="${pageContext.request.contextPath}/note/newNote.jsp" class="btn btn-default btn-lg" role="button">开始进行投票</a>
 	</div>
 	
 	 <div class="col-md-7">
@@ -88,4 +88,4 @@ $(function() {
     	fluid: false   });
 });
 </script>
-<jsp:include page="footer.jsp"></jsp:include>
+<jsp:include page="includes/footer.jsp"></jsp:include>

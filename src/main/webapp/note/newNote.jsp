@@ -9,10 +9,15 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
-   <jsp:include page="../header.jsp"></jsp:include>
+  <jsp:include page="../includes/head.jsp"></jsp:include>
    <link type="text/css" href="${pageContext.request.contextPath}/css/editor.css" rel="stylesheet">
    <link href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
-   
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="${pageContext.request.contextPath}/js/jquery.hotkeys.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+<script src="${pageContext.request.contextPath}/js/bootstrap-wysiwyg.js"></script>
+   <jsp:include page="../includes/header.jsp"></jsp:include>
 <br><Br><br>
 <h1 class="text-center">笔记分享</h1>
  <div class="btn-toolbar" data-role="editor-toolbar" data-target="#editor">
@@ -67,17 +72,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
       </div>
       <input type="text" data-edit="inserttext" id="voiceBtn" x-webkit-speech="">
     </div>
+<s:form  action="notice_newNote" method="POST" enctype="multipart/form-data" onsubmit="return true">
 
     <div id="editor">
       Go ahead&hellip;
     </div>
+	<input type="submit" class="btn btn-lg btn-primary">
+</s:form>
 
-
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="${pageContext.request.contextPath}/js/jquery-1.11.0.js"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="${pageContext.request.contextPath}/js/bootstrap.js"></script>
-<script src="${pageContext.request.contextPath}/js/bootstrap-wysiwyg.js"></script>
 <script>
   $(function(){
     function initToolbarBootstrapBindings() {
@@ -118,4 +120,4 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
     window.prettyPrint && prettyPrint();
   });
 </script>   
-<jsp:include page="../footer.jsp"></jsp:include>
+<jsp:include page="../includes/footer.jsp"></jsp:include>

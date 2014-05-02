@@ -7,8 +7,9 @@
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
+<jsp:include page="../includes/head.jsp"></jsp:include>
+<jsp:include page="../includes/header.jsp"></jsp:include>
 
-<jsp:include page="../header.jsp"></jsp:include>
 
 <s:form  action="notice_newNotice" method="POST" enctype="multipart/form-data" onsubmit="return true">
 <div class="jumbotron container">
@@ -24,4 +25,4 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 </s:form>
 
 
-<jsp:include page="../footer.jsp"></jsp:include>
+<jsp:include page="../includes/footer.jsp"></jsp:include>

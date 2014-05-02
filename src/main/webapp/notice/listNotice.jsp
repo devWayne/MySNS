@@ -8,12 +8,15 @@ String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 
-<jsp:include page="../header.jsp"></jsp:include>
+<jsp:include page="../includes/head.jsp"></jsp:include>
+<jsp:include page="../includes/header.jsp"></jsp:include>
+
 
 	<c:forEach items="${notices}" var="notice">
+	<div>${notice.au}</div>
+	<div>${notice.content}</div>
 	</c:forEach>
-<br><Br><br>
 
 
 
-<jsp:include page="../footer.jsp"></jsp:include>
+<jsp:include page="../includes/footer.jsp"></jsp:include>

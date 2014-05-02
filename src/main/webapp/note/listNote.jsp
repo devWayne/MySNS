@@ -8,7 +8,8 @@ String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 
-<jsp:include page="../header.jsp"></jsp:include>
+<jsp:include page="../includes/head.jsp"></jsp:include>
+<jsp:include page="../includes/header.jsp"></jsp:include>
 
 
 <br><Br><br>
@@ -19,4 +20,4 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="${pageContext.request.contextPath}/js/bootstrap.js"></script>
 <script src="${pageContext.request.contextPath}/js/bootstrap-wysiwyg.js"></script>
-<jsp:include page="../footer.jsp"></jsp:include>
+<jsp:include page="../includes/footer.jsp"></jsp:include>

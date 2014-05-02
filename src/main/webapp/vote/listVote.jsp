@@ -8,7 +8,9 @@ String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
 %>
 
-<jsp:include page="../header.jsp"></jsp:include>
+<jsp:include page="../includes/head.jsp"></jsp:include>
+<jsp:include page="../includes/header.jsp"></jsp:include>
+
 <link type="text/css" href="${pageContext.request.contextPath}/css/chart/chart.css" rel="stylesheet">
 <div class="row">
 <div class="chart-legend col-md-8">
@@ -57,4 +59,4 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 
 
-<jsp:include page="../footer.jsp"></jsp:include>
+<jsp:include page="../includes/footer.jsp"></jsp:include>
