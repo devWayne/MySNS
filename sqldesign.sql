@@ -63,10 +63,7 @@ CREATE TABLE IF NOT EXISTS tab06
   vote_id int NOT NULL AUTO_INCREMENT, 
   vote_au character varying(16) NOT NULL, 
   vote_theme character  varying(128) NOT NULL,
-  vote_option1 character  varying(16) NOT NULL,
-  vote_option2 character  varying(16) NOT NULL,
-  vote_option3 character  varying(16) NOT NULL,
-  vote_option4 character  varying(16) NOT NULL,
+  vote_option character  varying(128) NOT NULL,
   inserttime TIMESTAMP NOT NULL DEFAULT current_timestamp,
   primary key(vote_id)
 )

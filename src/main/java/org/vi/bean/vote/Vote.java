@@ -8,14 +8,8 @@ public class Vote {
 	  
 	  private String vote_theme;
 	  
-	  private String vote_option1;
+	  private String[] vote_option;
 	  
-	  private String vote_option2;
-	  
-	  private String vote_option3;
-	  
-	  private String vote_option4;
-
 	/**
 	 * @return the vote_id
 	 */
@@ -58,61 +52,14 @@ public class Vote {
 		this.vote_theme = vote_theme;
 	}
 
-	/**
-	 * @return the vote_option1
-	 */
-	public String getVote_option1() {
-		return vote_option1;
+	public String[] getVote_option() {
+		return vote_option;
 	}
 
-	/**
-	 * @param vote_option1 the vote_option1 to set
-	 */
-	public void setVote_option1(String vote_option1) {
-		this.vote_option1 = vote_option1;
+	public void setVote_option(String[] vote_option) {
+		this.vote_option = vote_option;
 	}
 
-	/**
-	 * @return the vote_option2
-	 */
-	public String getVote_option2() {
-		return vote_option2;
-	}
 
-	/**
-	 * @param vote_option2 the vote_option2 to set
-	 */
-	public void setVote_option2(String vote_option2) {
-		this.vote_option2 = vote_option2;
-	}
-
-	/**
-	 * @return the vote_option3
-	 */
-	public String getVote_option3() {
-		return vote_option3;
-	}
-
-	/**
-	 * @param vote_option3 the vote_option3 to set
-	 */
-	public void setVote_option3(String vote_option3) {
-		this.vote_option3 = vote_option3;
-	}
-
-	/**
-	 * @return the vote_option4
-	 */
-	public String getVote_option4() {
-		return vote_option4;
-	}
-
-	/**
-	 * @param vote_option4 the vote_option4 to set
-	 */
-	public void setVote_option4(String vote_option4) {
-		this.vote_option4 = vote_option4;
-	}
-	  
 	  
 }

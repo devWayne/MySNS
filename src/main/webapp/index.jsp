@@ -28,8 +28,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	 <a href="${pageContext.request.contextPath}/notice/listNotice.jsp" class="btn btn-default btn-lg" role="button">开始浏览消息</a>
 	
 	 <br><br>
-	 <a href="${pageContext.request.contextPath}/note/newNote.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个投票</a>
-	 <a href="${pageContext.request.contextPath}/note/newNote.jsp" class="btn btn-default btn-lg" role="button">开始进行投票</a>
+	 <a href="${pageContext.request.contextPath}/note/newTest.jsp" class="btn btn-primary btn-lg" role="button">开始创建一个测试</a>
+	 <a href="${pageContext.request.contextPath}/note/newTest.jsp" class="btn btn-default btn-lg" role="button">开始进行测试</a>
 	</div>
 	
 	 <div class="col-md-7">
